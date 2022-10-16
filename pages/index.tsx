@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -18,24 +19,28 @@ const Home: NextPage = () => {
             Welcome to Kirtland's Yarn Barn
           </h1>
 
+
           <div className={styles.highlight}>
-            Check Out New Arrivals!
-            <div>
+            <p>Check Out New Arrivals!</p>
+            <div className={styles.highlightItem}>
               <Image
+                alt='yarn on shelf'
                 layout="responsive"
                 width={200}
                 height={150}
                 src="/yarnshelf.avif"
               />
+              <p>Description Here</p>
             </div>
-            <p>Description Here</p>
           </div>
 
           <div className={styles.grid}>
-            <div className={styles.card}>
-              <h2>Sock</h2>
-              <p>Selection of sock yarn</p>
-            </div>
+            <Link href='/yarn'>
+              <div className={styles.card}>
+                <h2>Sock</h2>
+                <p>Selection of sock yarn</p>
+              </div>
+            </Link>
 
             <div className={styles.card}>
               <h2>Cotton</h2>
