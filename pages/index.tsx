@@ -35,27 +35,43 @@ const Home: NextPage = () => {
           </div>
 
           <div className={styles.grid}>
+            <Link href='/gifts'>
+              <div className={styles.card}>
+                <h2>Gifts</h2>
+                <p>Gift ideas for the fiber crafter in your life</p>
+              </div>
+            </Link>
+
             <Link href='/yarn'>
               <div className={styles.card}>
-                <h2>Sock</h2>
-                <p>Selection of sock yarn</p>
+                <h2>Yarn</h2>
+                <p>Browse yarn by weight or brand</p>
               </div>
             </Link>
 
             <div className={styles.card}>
-              <h2>Cotton</h2>
-              <p>Selection of cotton yarn</p>
+              <h2>Books</h2>
+              <p>Selection of books</p>
             </div>
 
             <div className={styles.card}>
-              <h2>Wool</h2>
-              <p>Selection of wool yarn</p>
-            </div>
-
-            <div className={styles.card}>
-              <h2>Patterns</h2>
+              <h2>Kits</h2>
               <p>
-                Browse Patterns
+                Browse Kits
+              </p>
+            </div>
+
+            <div className={styles.card}>
+              <h2>Accessories</h2>
+              <p>
+                Browse Tools and Accessories
+              </p>
+            </div>
+
+            <div className={styles.card}>
+              <h2>Socks</h2>
+              <p>
+                All things socks
               </p>
             </div>
           </div>
