@@ -3,8 +3,9 @@ import Image from "next/image";
 export interface IProduct {
     id: string
     name: string
-    price: number
     description: string
+    price: number
+    children: JSX.Element
 }
 
 interface IProductProps {
@@ -16,6 +17,7 @@ const Product = (props: IProductProps) => {
         <div>
             <h2>{props.product.name}</h2>
             <p>{props.product.description}</p>
+            <p>{props.product.children}</p>
             <div>
                 <div>${props.product.price}</div>
                 <button>
